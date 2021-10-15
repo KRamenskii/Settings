@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingOptionTableViewCell: UITableViewCell {
-    
+        
     static let identifier = Strings.identifier
     
     private let label: UILabel = {
@@ -38,6 +38,15 @@ class SettingOptionTableViewCell: UITableViewCell {
         return imageView
     }()
     
+    private let titleConditionOption: UILabel = {
+        let title = UILabel()
+        
+        title.font = .systemFont(ofSize: Label.titleFontSize, weight: .regular)
+        title.textColor = .lightGray
+        
+        return title
+    }()
+    
     // MARK: - Lifecycle
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -56,6 +65,7 @@ class SettingOptionTableViewCell: UITableViewCell {
     
     private func setupHierarchy() {
         contentView.addSubview(label)
+        contentView.addSubview(titleConditionOption)
         contentView.addSubview(iconContainer)
         iconContainer.addSubview(iconImageView)
     }
@@ -80,6 +90,10 @@ class SettingOptionTableViewCell: UITableViewCell {
             y: Label.coordinateY,
             width: contentView.frame.size.width - Numbers.twenty - iconContainer.frame.size.width - Numbers.ten,
             height: contentView.frame.size.height)
+        
+        titleConditionOption.translatesAutoresizingMaskIntoConstraints = false
+        titleConditionOption.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        titleConditionOption.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: Constraints.titleConditionOptionTrailingAnchor).isActive = true
     }
     
     override func prepareForReuse() {
@@ -87,12 +101,14 @@ class SettingOptionTableViewCell: UITableViewCell {
         iconImageView.image = nil
         label.text = nil
         iconContainer.backgroundColor = nil
+        titleConditionOption.text = nil
     }
     
     public func configure(with model: SettingOption) {
         label.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgruondColor
+        titleConditionOption.text = model.titleConditionOption
     }
 }
 
@@ -102,11 +118,14 @@ enum Strings {
     static let identifier: String = "SettingTableViewCell"
 }
 
+enum Constraints {
+    static let titleConditionOptionTrailingAnchor: CGFloat = -5
+}
 enum Label {
     static let fontSize: CGFloat = 17
     static let coordinateX: CGFloat = 25
     static let coordinateY: CGFloat = 0
-
+    static let titleFontSize: CGFloat = 17
 }
 
 enum IconContainer {
@@ -121,4 +140,3 @@ enum Numbers {
     static let twenty: CGFloat = 20
     static let oneAndFour: CGFloat = 1.4
 }
-
