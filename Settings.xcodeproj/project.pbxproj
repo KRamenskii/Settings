@@ -13,6 +13,7 @@
 		1D3B19812715F6210081DBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3B19802715F6210081DBD9 /* Assets.xcassets */; };
 		1D3B198C2715FD220081DBD9 /* SettingOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B198B2715FD220081DBD9 /* SettingOptionTableViewCell.swift */; };
 		1D3B198E2715FD480081DBD9 /* SettingSwitchOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B198D2715FD480081DBD9 /* SettingSwitchOptionTableViewCell.swift */; };
+		1DEDC7F3271883660048CA94 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDC7F2271883660048CA94 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1D3B19852715F6210081DBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3B198B2715FD220081DBD9 /* SettingOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionTableViewCell.swift; sourceTree = "<group>"; };
 		1D3B198D2715FD480081DBD9 /* SettingSwitchOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSwitchOptionTableViewCell.swift; sourceTree = "<group>"; };
+		1DEDC7F2271883660048CA94 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1D3B19852715F6210081DBD9 /* Info.plist */,
 				1D3B198B2715FD220081DBD9 /* SettingOptionTableViewCell.swift */,
 				1D3B198D2715FD480081DBD9 /* SettingSwitchOptionTableViewCell.swift */,
+				1DEDC7F2271883660048CA94 /* Model.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEDC7F3271883660048CA94 /* Model.swift in Sources */,
 				1D3B197C2715F61E0081DBD9 /* SettingsViewController.swift in Sources */,
 				1D3B198E2715FD480081DBD9 /* SettingSwitchOptionTableViewCell.swift in Sources */,
 				1D3B19782715F61E0081DBD9 /* AppDelegate.swift in Sources */,

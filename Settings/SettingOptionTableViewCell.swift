@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingOptionTableViewCell: UITableViewCell {
-    
+        
     static let identifier = Strings.identifier
     
     private let label: UILabel = {
