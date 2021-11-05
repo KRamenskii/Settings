@@ -11,7 +11,9 @@ final class SettingsView: UIView {
     
     // MARK: - Configuration
     
-    
+    func configureView(with models: [Section]) {
+        self.models = models
+    }
     
     // MARK: - Private properties
     
@@ -47,7 +49,6 @@ final class SettingsView: UIView {
     
     private func commonInit() {
         backgroundColor = .white
-//        title = "Настройки"
         setupHierarchy()
         setupLayout()
         createDelegateForTable()
@@ -99,12 +100,16 @@ extension SettingsView: UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            cell.configureView(with: model)
+            
             return cell
             
         case .staticConditionCell(let model):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsConditionOptionTableViewCell.identifier, for: indexPath) as? SettingsConditionOptionTableViewCell else {
                 return UITableViewCell()
             }
+            
+            cell.configureView(with: model)
             
             return cell
             
@@ -113,11 +118,14 @@ extension SettingsView: UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            cell.configureView(with: model)
+            
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let type = models[indexPath.section].options[indexPath.row]
         
         switch type.self {

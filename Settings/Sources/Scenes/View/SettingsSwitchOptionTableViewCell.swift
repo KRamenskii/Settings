@@ -7,13 +7,23 @@
 
 import UIKit
 
-class SettingsSwitchOptionTableViewCell: UITableViewCell {
+final class SettingsSwitchOptionTableViewCell: UITableViewCell {
     
     static let identifier = Strings.identifier
     
     // MARK: - Configuration
     
-    
+    func configureView(with model: SettingSwitchOption) {
+        label.text = model.title
+        
+        if UIImage(systemName: model.iconImageName) == nil {
+            iconImageView.image = UIImage(named: model.iconImageName)
+        } else {
+            iconImageView.image = UIImage(systemName: model.iconImageName)
+        }
+        
+        iconContainer.backgroundColor = UIColor(hex: model.iconBackgruondColor)
+    }
     
     // MARK: - Views
     

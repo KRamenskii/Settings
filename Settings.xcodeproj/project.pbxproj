@@ -20,6 +20,8 @@
 		1D96814127351D3D007F87C6 /* SettingsOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96814027351D3D007F87C6 /* SettingsOptionTableViewCell.swift */; };
 		1D96814327351D5F007F87C6 /* SettingsConditionOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96814227351D5F007F87C6 /* SettingsConditionOptionTableViewCell.swift */; };
 		1D96814527351D72007F87C6 /* SettingsSwitchOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96814427351D72007F87C6 /* SettingsSwitchOptionTableViewCell.swift */; };
+		1D96814727352AB1007F87C6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96814627352AB1007F87C6 /* SettingsController.swift */; };
+		1D96814A27354538007F87C6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96814927354538007F87C6 /* Color.swift */; };
 		1DB419882719728700D8A142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB419872719728600D8A142 /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		1D96814027351D3D007F87C6 /* SettingsOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionTableViewCell.swift; sourceTree = "<group>"; };
 		1D96814227351D5F007F87C6 /* SettingsConditionOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConditionOptionTableViewCell.swift; sourceTree = "<group>"; };
 		1D96814427351D72007F87C6 /* SettingsSwitchOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchOptionTableViewCell.swift; sourceTree = "<group>"; };
+		1D96814627352AB1007F87C6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		1D96814927354538007F87C6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		1DB419872719728600D8A142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1D96813427350F42007F87C6 /* Old Files */,
+				1D96814827354516007F87C6 /* Extension  */,
 				1D96813327350F39007F87C6 /* App */,
 				1D96813227350F32007F87C6 /* Scenes */,
 			);
@@ -151,8 +156,17 @@
 		1D96813727350F95007F87C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1D96814627352AB1007F87C6 /* SettingsController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		1D96814827354516007F87C6 /* Extension  */ = {
+			isa = PBXGroup;
+			children = (
+				1D96814927354538007F87C6 /* Color.swift */,
+			);
+			path = "Extension ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB419882719728700D8A142 /* Model.swift in Sources */,
+				1D96814727352AB1007F87C6 /* SettingsController.swift in Sources */,
 				1D3B197C2715F61E0081DBD9 /* SettingsViewController.swift in Sources */,
 				1D96814527351D72007F87C6 /* SettingsSwitchOptionTableViewCell.swift in Sources */,
 				1D96814127351D3D007F87C6 /* SettingsOptionTableViewCell.swift in Sources */,
@@ -233,6 +248,7 @@
 				1D96814327351D5F007F87C6 /* SettingsConditionOptionTableViewCell.swift in Sources */,
 				1D96813F27351A62007F87C6 /* SettingsView.swift in Sources */,
 				1D3B19782715F61E0081DBD9 /* AppDelegate.swift in Sources */,
+				1D96814A27354538007F87C6 /* Color.swift in Sources */,
 				1D96813D27351246007F87C6 /* DataSetions .swift in Sources */,
 				1D968139273510C6007F87C6 /* Section .swift in Sources */,
 				1D96813B27351228007F87C6 /* SectionModel.swift in Sources */,
