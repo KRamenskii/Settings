@@ -58,16 +58,80 @@
 		1D3B19762715F61E0081DBD9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1D3B19772715F61E0081DBD9 /* AppDelegate.swift */,
-				1D3B197B2715F61E0081DBD9 /* SettingsViewController.swift */,
+				1D96813127350EF9007F87C6 /* Sources */,
+				1D96813027350EF2007F87C6 /* Resources */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1D96813027350EF2007F87C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1D3B197D2715F61E0081DBD9 /* Main.storyboard */,
 				1D3B19802715F6210081DBD9 /* Assets.xcassets */,
 				1D3B19852715F6210081DBD9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D96813127350EF9007F87C6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1D96813427350F42007F87C6 /* Old Files */,
+				1D96813327350F39007F87C6 /* App */,
+				1D96813227350F32007F87C6 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1D96813227350F32007F87C6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1D96813727350F95007F87C6 /* Controller */,
+				1D96813627350F8F007F87C6 /* View */,
+				1D96813527350F89007F87C6 /* Model */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1D96813327350F39007F87C6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1D3B19772715F61E0081DBD9 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1D96813427350F42007F87C6 /* Old Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D3B197B2715F61E0081DBD9 /* SettingsViewController.swift */,
 				1D3B198B2715FD220081DBD9 /* SettingOptionTableViewCell.swift */,
 				1D3B198D2715FD480081DBD9 /* SettingSwitchOptionTableViewCell.swift */,
 				1DB419872719728600D8A142 /* Model.swift */,
 			);
-			path = Settings;
+			path = "Old Files";
+			sourceTree = "<group>";
+		};
+		1D96813527350F89007F87C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D96813627350F8F007F87C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D96813727350F95007F87C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Settings/Info.plist;
+				INFOPLIST_FILE = Settings/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Настройки";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -317,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Settings/Info.plist;
+				INFOPLIST_FILE = Settings/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Настройки";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
