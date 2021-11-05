@@ -7,13 +7,24 @@
 
 import UIKit
 
-class SettingsConditionOptionTableViewCell: UITableViewCell {
+final class SettingsConditionOptionTableViewCell: UITableViewCell {
     
     static let identifier = Strings.identifier
     
     // MARK: - Configuration
     
-    
+    func configureView(with model: SettingConditionOption) {
+        label.text = model.title
+        
+        if UIImage(systemName: model.iconImageName) == nil {
+            iconImageView.image = UIImage(named: model.iconImageName)
+        } else {
+            iconImageView.image = UIImage(systemName: model.iconImageName)
+        }
+        
+        iconContainer.backgroundColor = UIColor(hex: model.iconBackgruondColor)
+        titleConditionOption.text = model.titleConditionOption
+    }
     
     // MARK: - Views
     
