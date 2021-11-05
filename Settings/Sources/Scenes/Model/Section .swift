@@ -13,7 +13,7 @@ struct Section {
 
 enum SettingOptionType {
     case staticCell(model: SettingOption)
-    case staticConditioncell(model: SettingConditionOption)
+    case staticConditionCell(model: SettingConditionOption)
     case switchCell(model: SettingSwitchOption)
 }
 

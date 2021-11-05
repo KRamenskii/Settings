@@ -13,8 +13,8 @@ final class SectionModel {
         return [
             Section(options: [
                 .switchCell(model: SettingSwitchOption(title: TitleOptions.airplaneMode, iconImageName: IconImageOption.airplaneMode, iconBackgruondColor: ColorOptions.airplaneMode, isOn: false)),
-                .staticConditioncell(model: SettingConditionOption(title: TitleOptions.wifi, iconImageName: IconImageOption.wifi, iconBackgruondColor: ColorOptions.wifi, titleConditionOption: TitleConditionOption.wifi)),
-                .staticConditioncell(model: SettingConditionOption(title: TitleOptions.bluetooth, iconImageName: IconImageOption.bluetooth, iconBackgruondColor: ColorOptions.bluetooth, titleConditionOption: TitleConditionOption.bluetooth)),
+                .staticConditionCell(model: SettingConditionOption(title: TitleOptions.wifi, iconImageName: IconImageOption.wifi, iconBackgruondColor: ColorOptions.wifi, titleConditionOption: TitleConditionOption.wifi)),
+                .staticConditionCell(model: SettingConditionOption(title: TitleOptions.bluetooth, iconImageName: IconImageOption.bluetooth, iconBackgruondColor: ColorOptions.bluetooth, titleConditionOption: TitleConditionOption.bluetooth)),
                 .staticCell(model: SettingOption(title: TitleOptions.cellular, iconImageName: IconImageOption.cellular, iconBackgruondColor: ColorOptions.cellular)),
                 .staticCell(model: SettingOption(title: TitleOptions.modemMode, iconImageName: IconImageOption.modemMode, iconBackgruondColor: ColorOptions.modemMode)),
                 .switchCell(model: SettingSwitchOption(title: TitleOptions.vpn, iconImageName: IconImageOption.vpn, iconBackgruondColor: ColorOptions.vpn, isOn: false))
