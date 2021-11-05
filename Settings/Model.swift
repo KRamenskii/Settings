@@ -16,38 +16,38 @@ struct Model {
     mutating func createTable() {
         models.append(Section(options: [
             .switchCell(model: SettingSwitchOption(title: TitleOptions.airplaneMode, icon: IconImageOption.airplaneMode, iconBackgruondColor: ColorOptions.airplaneMode, isOn: false)),
-            .staticCell(model: SettingOption(title: TitleOptions.wifi, icon: IconImageOption.wifi, iconBackgruondColor: ColorOptions.wifi)),
-            .staticCell(model: SettingOption(title: TitleOptions.bluetooth, icon: IconImageOption.bluetooth, iconBackgruondColor: ColorOptions.bluetooth)),
-            .staticCell(model: SettingOption(title: TitleOptions.cellular, icon: IconImageOption.cellular, iconBackgruondColor: ColorOptions.cellular)),
-            .staticCell(model: SettingOption(title: TitleOptions.modemMode, icon: IconImageOption.modemMode, iconBackgruondColor: ColorOptions.modemMode)),
+            .staticCell(model: SettingOption(title: TitleOptions.wifi, icon: IconImageOption.wifi, iconBackgruondColor: ColorOptions.wifi, titleConditionOption: TitleConditionOption.wifi)),
+            .staticCell(model: SettingOption(title: TitleOptions.bluetooth, icon: IconImageOption.bluetooth, iconBackgruondColor: ColorOptions.bluetooth, titleConditionOption: TitleConditionOption.bluetooth)),
+            .staticCell(model: SettingOption(title: TitleOptions.cellular, icon: IconImageOption.cellular, iconBackgruondColor: ColorOptions.cellular, titleConditionOption: TitleConditionOption.cellular)),
+            .staticCell(model: SettingOption(title: TitleOptions.modemMode, icon: IconImageOption.modemMode, iconBackgruondColor: ColorOptions.modemMode, titleConditionOption: TitleConditionOption.modemMode)),
             .switchCell(model: SettingSwitchOption(title: TitleOptions.vpn, icon: IconImageOption.vpn, iconBackgruondColor: ColorOptions.vpn, isOn: false))
         ]))
         
         models.append(Section(options: [
-            .staticCell(model: SettingOption(title: TitleOptions.notifications, icon: IconImageOption.notifications, iconBackgruondColor: ColorOptions.notifications)),
-            .staticCell(model: SettingOption(title: TitleOptions.sounds, icon: IconImageOption.sounds, iconBackgruondColor: ColorOptions.sounds)),
-            .staticCell(model: SettingOption(title: TitleOptions.focusing, icon: IconImageOption.focusing, iconBackgruondColor: ColorOptions.focusing)),
-            .staticCell(model: SettingOption(title: TitleOptions.screenTime, icon: IconImageOption.screenTime, iconBackgruondColor: ColorOptions.screenTime))
+            .staticCell(model: SettingOption(title: TitleOptions.notifications, icon: IconImageOption.notifications, iconBackgruondColor: ColorOptions.notifications, titleConditionOption: TitleConditionOption.notifications)),
+            .staticCell(model: SettingOption(title: TitleOptions.sounds, icon: IconImageOption.sounds, iconBackgruondColor: ColorOptions.sounds, titleConditionOption: TitleConditionOption.sounds)),
+            .staticCell(model: SettingOption(title: TitleOptions.focusing, icon: IconImageOption.focusing, iconBackgruondColor: ColorOptions.focusing, titleConditionOption: TitleConditionOption.focusing)),
+            .staticCell(model: SettingOption(title: TitleOptions.screenTime, icon: IconImageOption.screenTime, iconBackgruondColor: ColorOptions.screenTime, titleConditionOption: TitleConditionOption.screenTime))
         ]))
         
         models.append(Section(options: [
-            .staticCell(model: SettingOption(title: TitleOptions.main, icon: IconImageOption.main, iconBackgruondColor: ColorOptions.main)),
-            .staticCell(model: SettingOption(title: TitleOptions.controlPoint, icon: IconImageOption.controlPoint, iconBackgruondColor: ColorOptions.controlPoint)),
-            .staticCell(model: SettingOption(title: TitleOptions.ScreenAndBrightness, icon: IconImageOption.ScreenAndBrightness, iconBackgruondColor: ColorOptions.ScreenAndBrightness)),
-            .staticCell(model: SettingOption(title: TitleOptions.homeScreen, icon: IconImageOption.homeScreen, iconBackgruondColor: ColorOptions.homeScreen)),
-            .staticCell(model: SettingOption(title: TitleOptions.universalAccess, icon: IconImageOption.universalAccess, iconBackgruondColor: ColorOptions.universalAccess)),
-            .staticCell(model: SettingOption(title: TitleOptions.wallpaper, icon: IconImageOption.wallpaper, iconBackgruondColor: ColorOptions.wallpaper)),
-            .staticCell(model: SettingOption(title: TitleOptions.siriAndSearch, icon: IconImageOption.siriAndSearch, iconBackgruondColor: ColorOptions.siriAndSearch)),
-            .staticCell(model: SettingOption(title: TitleOptions.faceIdAndPassword, icon: IconImageOption.faceIdAndPassword, iconBackgruondColor: ColorOptions.faceIdAndPassword)),
-            .staticCell(model: SettingOption(title: TitleOptions.emergencyCall, icon: IconImageOption.emergencyCall, iconBackgruondColor: ColorOptions.emergencyCall)),
-            .staticCell(model: SettingOption(title: TitleOptions.virusContactNotifcations, icon: IconImageOption.virusContactNotifcations, iconBackgruondColor: ColorOptions.virusContactNotifcations)),
-            .staticCell(model: SettingOption(title: TitleOptions.battery, icon: IconImageOption.battery, iconBackgruondColor: ColorOptions.battery)),
-            .staticCell(model: SettingOption(title: TitleOptions.confidentiality, icon: IconImageOption.confidentiality, iconBackgruondColor: ColorOptions.confidentiality))
+            .staticCell(model: SettingOption(title: TitleOptions.main, icon: IconImageOption.main, iconBackgruondColor: ColorOptions.main, titleConditionOption: TitleConditionOption.main)),
+            .staticCell(model: SettingOption(title: TitleOptions.controlPoint, icon: IconImageOption.controlPoint, iconBackgruondColor: ColorOptions.controlPoint, titleConditionOption: TitleConditionOption.controlPoint)),
+            .staticCell(model: SettingOption(title: TitleOptions.ScreenAndBrightness, icon: IconImageOption.ScreenAndBrightness, iconBackgruondColor: ColorOptions.ScreenAndBrightness, titleConditionOption: TitleConditionOption.ScreenAndBrightness)),
+            .staticCell(model: SettingOption(title: TitleOptions.homeScreen, icon: IconImageOption.homeScreen, iconBackgruondColor: ColorOptions.homeScreen, titleConditionOption: TitleConditionOption.homeScreen)),
+            .staticCell(model: SettingOption(title: TitleOptions.universalAccess, icon: IconImageOption.universalAccess, iconBackgruondColor: ColorOptions.universalAccess, titleConditionOption: TitleConditionOption.universalAccess)),
+            .staticCell(model: SettingOption(title: TitleOptions.wallpaper, icon: IconImageOption.wallpaper, iconBackgruondColor: ColorOptions.wallpaper, titleConditionOption: TitleConditionOption.wallpaper)),
+            .staticCell(model: SettingOption(title: TitleOptions.siriAndSearch, icon: IconImageOption.siriAndSearch, iconBackgruondColor: ColorOptions.siriAndSearch, titleConditionOption: TitleConditionOption.siriAndSearch)),
+            .staticCell(model: SettingOption(title: TitleOptions.faceIdAndPassword, icon: IconImageOption.faceIdAndPassword, iconBackgruondColor: ColorOptions.faceIdAndPassword, titleConditionOption: TitleConditionOption.faceIdAndPassword)),
+            .staticCell(model: SettingOption(title: TitleOptions.emergencyCall, icon: IconImageOption.emergencyCall, iconBackgruondColor: ColorOptions.emergencyCall, titleConditionOption: TitleConditionOption.emergencyCall)),
+            .staticCell(model: SettingOption(title: TitleOptions.virusContactNotifcations, icon: IconImageOption.virusContactNotifcations, iconBackgruondColor: ColorOptions.virusContactNotifcations, titleConditionOption: TitleConditionOption.virusContactNotifcations)),
+            .staticCell(model: SettingOption(title: TitleOptions.battery, icon: IconImageOption.battery, iconBackgruondColor: ColorOptions.battery, titleConditionOption: TitleConditionOption.battery)),
+            .staticCell(model: SettingOption(title: TitleOptions.confidentiality, icon: IconImageOption.confidentiality, iconBackgruondColor: ColorOptions.confidentiality, titleConditionOption: TitleConditionOption.confidentiality))
         ]))
         
         models.append(Section(options: [
-            .staticCell(model: SettingOption(title: TitleOptions.appStore, icon: IconImageOption.appStore, iconBackgruondColor: ColorOptions.appStore)),
-            .staticCell(model: SettingOption(title: TitleOptions.walletAndApplePay, icon: IconImageOption.walletAndApplePay, iconBackgruondColor: ColorOptions.walletAndApplePay))
+            .staticCell(model: SettingOption(title: TitleOptions.appStore, icon: IconImageOption.appStore, iconBackgruondColor: ColorOptions.appStore, titleConditionOption: TitleConditionOption.appStore)),
+            .staticCell(model: SettingOption(title: TitleOptions.walletAndApplePay, icon: IconImageOption.walletAndApplePay, iconBackgruondColor: ColorOptions.walletAndApplePay, titleConditionOption: TitleConditionOption.walletAndApplePay))
         ]))
     }
     
@@ -133,6 +133,33 @@ struct Model {
         static let appStore = UIImage(named: "icons8-app_store")
         static let walletAndApplePay = UIImage(named: "icons8-wallet")
     }
+    
+    enum TitleConditionOption {
+        static let airplaneMode = ""
+        static let wifi = "Не подключено"
+        static let bluetooth = "Вкл."
+        static let cellular = ""
+        static let modemMode = ""
+        static let vpn = ""
+        static let notifications = ""
+        static let sounds = ""
+        static let focusing = ""
+        static let screenTime = ""
+        static let main = ""
+        static let controlPoint = ""
+        static let ScreenAndBrightness = ""
+        static let homeScreen = ""
+        static let universalAccess = ""
+        static let wallpaper = ""
+        static let siriAndSearch = ""
+        static let faceIdAndPassword = ""
+        static let emergencyCall = ""
+        static let virusContactNotifcations = ""
+        static let battery = ""
+        static let confidentiality = ""
+        static let appStore = ""
+        static let walletAndApplePay = ""
+    }
 }
 
 // MARK: - Configurate content cells
@@ -150,6 +177,7 @@ struct SettingOption {
     let title: String
     let icon: UIImage?
     let iconBackgruondColor: UIColor
+    let titleConditionOption: String
 }
 
 struct SettingSwitchOption {
